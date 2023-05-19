@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run: echo "This is a test step"
       
-    odc-backend:
+  odc-backend:
     machine: true
     steps:
       - checkout
@@ -22,7 +22,7 @@ jobs:
           path: reports/dependency-check-report.csv
           destination: depcheck-artifact
 
-workflows:
+  workflows:
   version: 2
   webgoat:
     jobs:
