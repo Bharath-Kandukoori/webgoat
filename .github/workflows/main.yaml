@@ -64,7 +64,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true             # allow the build to fail, similar to allow_failure: true
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: Snyk
           path: snyk-results.json
